@@ -2,8 +2,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double startingBalance = 5000.00;       // Credit card balance
-        double annualInterestRate = 0.17;       // 17% per year
+        double startingBalance = 5000.00;
+        double annualInterestRate = 0.17;
         double monthlyInterestRate = annualInterestRate / 12;
 
         double monthOneInterest = 0.0;
@@ -11,11 +11,9 @@ public class Main {
         double monthTwoInterest = 0.0;
         double monthTwoBalance = 0.0;
 
-        // Month 1: interest is charged on the starting balance, no payment is made
         monthOneInterest = startingBalance * monthlyInterestRate;
         monthOneBalance = startingBalance + monthOneInterest;
 
-        // Month 2: interest is charged on the new (larger) balance
         monthTwoInterest = monthOneBalance * monthlyInterestRate;
         monthTwoBalance = monthOneBalance + monthTwoInterest;
 
